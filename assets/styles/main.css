@@ -1,0 +1,571 @@
+@font-face {
+    font-family: "Dosis";
+    src: url("../fonts/Dosis.ttf");
+}
+
+@font-face {
+    font-family: "Hello";
+    src: url("../fonts/Hello.ttf");
+}
+
+@font-face {
+    font-family: "Odachi";
+    src: url("../fonts/Odachi.otf");
+}
+
+:root {
+    font-size: 16px;
+    --theme: #dc4963;
+    --red: #b42930;
+    --peach: #ee8369;
+    --gold: #cfb53b;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-5 {
+  flex: 5;
+}
+
+.flex-6 {
+  flex: 6;
+}
+
+.flex-7 {
+  flex: 7;
+}
+
+.flex-8 {
+  flex: 8;
+}
+
+.flex-9 {
+  flex: 9;
+}
+
+.flex-10 {
+  flex: 10;
+}
+
+.flex-11 {
+  flex: 11;
+}
+
+.flex-12 {
+  flex: 12;
+}
+
+.flex-13 {
+  flex: 13;
+}
+
+.flex-14 {
+  flex: 14;
+}
+
+.flex-15 {
+  flex: 15;
+}
+
+.flex-16 {
+  flex: 16;
+}
+
+.flex-17 {
+  flex: 17;
+}
+
+.flex-18 {
+  flex: 18;
+}
+
+.flex-19 {
+    flex: 19;
+}
+
+.flex-20 {
+    flex: 20;
+}
+
+.flex-21 {
+    flex: 21;
+}
+
+.flex-22 {
+    flex: 22;
+}
+
+.flex-23 {
+    flex: 23;
+}
+
+.flex-24 {
+    flex: 24;
+}  
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-c {
+    justify-content: center;
+}
+
+.main-sb {
+    justify-content: space-between;
+}
+
+.cross-c {
+    align-items: center;
+}
+
+.vp-0 {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.vp-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.vp-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.vp-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.hp-1 {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.hp-2 {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.hp-3 {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.page-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.bg {
+    background: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 400vw 400vh;
+    transition: 1.8s ease-in;
+    background-position: 0% calc(100% / 3);
+}
+
+.bg.frame2 {
+    transition: 1.8s ease-out;
+    background-position: calc(100% / 3) calc(100% / 3);
+}
+
+.bg.a-mth {
+    transition: 1.8s ease-in;
+    background-position: calc(100% / 3) 0%;
+}
+
+.bg.a-hat {
+    transition: 1.8s ease-in;
+    background-position: 100% calc(100% / 3);
+}
+
+.bg.a-wi {
+    transition: 1.8s ease-in;
+    background-size: 435vw 410vh;
+    background-position: calc(100% / 3) calc(100% / 3 * 2);
+}
+
+.bg.a-right {
+    transition: 1.8s ease-in;
+    background-size: 450vw 410vh;
+    background-position: calc(100% / 3 * 2) calc(100% / 3 * 2);
+}
+
+.bg.a-left {
+    transition: 1.8s ease-in;
+    background-position: 0% calc(100% / 3 * 2);
+}
+
+.bg.a-down {
+    transition: 1.8s ease-in;
+    background-position: calc(100% / 3) 100%;
+}
+
+.content-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.view-wh {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 5rem;
+    transition: 1s ease-in-out;
+}
+
+.view-mth {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 5rem;
+    transition: 1s ease-in-out;
+}
+
+.view-wi {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 5rem;
+    transition: 1s ease-in-out;
+}
+
+.view-wi-office {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2rem 18rem;
+    overflow-y: scroll;
+    transition: 1s ease-in-out;
+}
+
+.view-wi-kitchen {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2rem 18rem;
+    overflow-y: scroll;
+    transition: 1s ease-in-out;
+}
+
+.view-wi-bed {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 3rem 16rem;
+    overflow-y: scroll;
+    transition: 1s ease-in-out;
+}
+
+.view-wi-bed p {
+    font-size: 1.5rem!important;
+}
+
+.view-hat {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2rem;
+    transition: 1s ease-in-out;
+}
+
+.circle-menuimg{
+    display: flex;
+    align-items: center;  
+    padding-left: 20rem;  
+    padding-right:20rem;
+}
+
+.circle-img {
+    height: 12rem;
+    width: 12rem;
+    transition: 1s ease;
+    cursor: pointer;    
+    border: 0.25rem #b93751 solid;
+    border-radius: 50%;
+    background-color: bisque;
+}
+.circle-img:hover{
+    height: 14rem;
+    width: 14rem;
+}
+
+.circle-menu{
+    font-size: 2rem;
+    font-family: "Dosis";
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.profile {
+    max-height: 20rem;
+    max-width: 20rem;
+    width: 100%;
+}
+
+.profile img {
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: #2e6c0b60 0px 4px 50px;
+}
+
+.out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-family: "Hello";
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-family: "Hello";
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-family: "Hello";
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h4 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-family: "Hello";
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h5 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-family: "Hello";
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h6 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-family: "Dosis";
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+p {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    font-family: "Dosis";
+    font-weight: 300;
+}
+
+table {
+    margin-top: 3rem;
+    z-index: 50;
+}
+
+th {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: "Dosis";
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+td {
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: "Dosis";
+    font-weight: 500;
+}
+
+td div:hover {
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+    font-weight: 900;
+}
+
+td img {
+    height: 2rem;
+    width: auto;
+    margin-right: 0.7rem;
+}
+
+.map {
+    height: auto;
+    width: 100%;
+}
+
+.map-small {
+    height: 8rem;
+    width: auto;
+}
+
+.icon {
+    height: 45px;
+    width: 45px;
+    margin-right: 2rem;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.icon > img{
+    height: 45px;
+    width: auto;
+}
+
+.menu {
+    box-sizing: border-box;
+    padding: 2rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.menu li {
+    text-align: right;
+}
+
+.menu a {
+    font-size: 2rem;
+    font-family: "Dosis";
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+.menu a:hover {
+    color: var(--theme);
+    font-weight: 600;
+}
+
+.menu a.active {
+    color: var(--theme);
+    font-weight: 600;
+}
+
+.back-btn {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    height: 3rem;
+    width: 3rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+.back-btn:hover {
+    padding: 0.7rem;
+}
+
+.back-btn img {
+    height: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+    :root {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1168px) {
+    :root {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    :root {
+        font-size: 10px;
+    }
+}
