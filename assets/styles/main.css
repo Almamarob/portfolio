@@ -48,6 +48,7 @@
   --skill3:#efa95fac;
   --skill4:#efa95fac;
   --certificatesc:#f6f6f6c7;
+  --certificatescatc:#fb6e7a75;
   --k-t:#b14b3d;
   --k-subt:#be8a3f;
   --k-sk:#373411;
@@ -432,17 +433,26 @@ justify-content: start;
   
 .certificates{
   border-radius: 1rem;
-  width: 15rem;
+  width: 9rem;
   height: fit-content;
   box-sizing: border-box;
   margin: 0.5rem;
   text-align: center;
 }
 
+.certificatescategory{
+  border-radius: 1rem;
+  width: auto;
+  height: fit-content;
+  box-sizing: border-box;
+  margin: 1rem;
+  text-align: center;
+}
+
 .certificates p, .dish p{
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Dosis";
-  font-weight: 600;
+  font-weight: 700;
   padding: .5rem;
 }
   
